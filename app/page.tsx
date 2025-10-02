@@ -15,11 +15,18 @@ import {
 } from "@/components/ui/resizable-navbar"
 import { Github, Shield, Zap, Eye, ArrowRight, Sparkles, Search, Code, CheckCircle } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
+import { useRouter } from "next/navigation" // Add this import
 const Beams = dynamic(() => import('./Beams'), { ssr: false })
 
 export default function HomePage() {
   const observerRef = useRef<IntersectionObserver | null>(null)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const router = useRouter() // Add this
+
+  // Add navigation handler
+  const handleJoinBeta = () => {
+    router.push('/signup')
+  }
 
   const navItems = [
     {
@@ -61,17 +68,18 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar>
-        {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
+          {/* Update navbar buttons */}
           <div className="flex items-center gap-4">
             <NavbarButton variant="secondary">Login</NavbarButton>
-            <NavbarButton variant="primary">Join Beta</NavbarButton>
+            <NavbarButton variant="primary" onClick={handleJoinBeta}>
+              Join Beta
+            </NavbarButton>
           </div>
         </NavBody>
 
-        {/* Mobile Navigation */}
         <MobileNav>
           <MobileNavHeader>
             <NavbarLogo />
@@ -104,7 +112,10 @@ export default function HomePage() {
                 Login
               </NavbarButton>
               <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(false)
+                  handleJoinBeta()
+                }}
                 variant="primary"
                 className="w-full"
               >
@@ -114,6 +125,7 @@ export default function HomePage() {
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
+
 
       <section className="py-32 px-6 hero-gradient relative overflow-hidden">
         {/* Background Beams Animation */}
@@ -148,6 +160,7 @@ export default function HomePage() {
           <div className="text-reveal stagger-3 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
+              onClick={handleJoinBeta}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold glow-pulse transform hover:scale-105 transition-all duration-300"
             >
               Join the Private Beta
@@ -456,6 +469,7 @@ export default function HomePage() {
             application security.
           </p>
           <Button
+            onClick={handleJoinBeta}
             className="fade-in-up stagger-2 bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-6 text-xl font-semibold glow-white"
             size="lg"
           >
