@@ -1,5 +1,6 @@
 "use client"
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import {
@@ -235,13 +236,12 @@ export default function HomePage() {
             <div className="flex flex-col md:flex-row gap-8 items-center max-w-5xl mx-auto">
               <div className="flex-1">
                 <div className="bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 transform hover:scale-105 transition-all duration-300 glow-white">
-                  <div className="aspect-video bg-muted/50 rounded-lg flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-background/20"></div>
-                    <div className="text-center space-y-2 relative z-10">
-                      <Search className="w-8 h-8 text-primary mx-auto floating" />
-                      <p className="text-sm text-foreground font-medium">Security Dashboard</p>
-                      <p className="text-xs text-muted-foreground/70">Multi-layered scanning</p>
-                    </div>
+                  <div className="aspect-video bg-muted/50 rounded-lg relative overflow-hidden">
+                    <img
+                      src="/repository-ai-auditor.png"
+                      alt="Repository AI Auditor - Comprehensive security analysis with vulnerability detection and security scoring"
+                      className="object-cover rounded-lg w-full h-full"
+                    />
                   </div>
                 </div>
               </div>
@@ -337,13 +337,12 @@ export default function HomePage() {
               </div>
               <div className="flex-1">
                 <div className="bg-card border border-border rounded-xl p-6">
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-background/20 to-muted/40"></div>
-                    <div className="text-center space-y-2 relative z-10">
-                      <Zap className="w-8 h-8 text-muted-foreground mx-auto" />
-                      <p className="text-sm text-muted-foreground font-medium">Fix Generation</p>
-                      <p className="text-xs text-muted-foreground/70">One-click PR creation</p>
-                    </div>
+                  <div className="aspect-video bg-muted rounded-lg relative overflow-hidden">
+                    <img
+                      src="/security-fix-summary.png"
+                      alt="Security Fix Summary - Automated code remediation with pull request generation"
+                      className="object-cover rounded-lg w-full h-full"
+                    />
                   </div>
                 </div>
               </div>
@@ -405,13 +404,12 @@ export default function HomePage() {
             <div className="flex flex-col md:flex-row gap-8 items-center max-w-5xl mx-auto">
               <div className="flex-1">
                 <div className="bg-card border border-border rounded-xl p-6">
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-background/20 to-muted/40"></div>
-                    <div className="text-center space-y-2 relative z-10">
-                      <Shield className="w-8 h-8 text-muted-foreground mx-auto" />
-                      <p className="text-sm text-muted-foreground font-medium">IDE Integration</p>
-                      <p className="text-xs text-muted-foreground/70">Real-time suggestions</p>
-                    </div>
+                  <div className="aspect-video bg-muted rounded-lg relative overflow-hidden">
+                    <img
+                      src="/code-editor-interface.png"
+                      alt="Code Editor Interface - Real-time IDE integration with project structure and FastAPI development"
+                      className="object-cover rounded-lg w-full h-full"
+                    />
                   </div>
                 </div>
               </div>
@@ -452,6 +450,96 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-2xl font-bold">Best Practices</h3>
                 <p className="text-muted-foreground leading-relaxed">Best practices enforcement from day one</p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-32 px-6 section-gradient">
+        <div className="max-w-7xl mx-auto">
+          <div className="fade-in-up text-center mb-20">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border text-sm font-medium mb-8">
+              <Zap className="w-4 h-4" />
+              Step 4: Voice-Powered Development
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-balance text-glow">
+              Voice-Powered Development
+            </h2>
+            <p className="text-xl md:text-2xl text-muted-foreground text-pretty max-w-4xl mx-auto font-light leading-relaxed">
+              Speak your code into existence. Build, refactor, and test applications using natural language commands.
+            </p>
+          </div>
+
+          {/* UI Image Showcase - Two Picture Layout */}
+          <div className="fade-in-up mb-16 space-y-12">
+            {/* First Image - AI Assistant & Project Generation */}
+            <div className="flex flex-col md:flex-row gap-8 items-center max-w-5xl mx-auto">
+              <div className="flex-1 text-left space-y-4">
+                <h3 className="text-xl font-bold">AI Assistant & Project Generation</h3>
+                <p className="text-muted-foreground text-sm">Your AI coding assistant helps you build amazing apps with intelligent suggestions, bug fixes, and real-time code improvements.</p>
+              </div>
+              <div className="flex-1">
+                <div className="bg-card border border-border rounded-xl p-6">
+                  <div className="aspect-video bg-muted rounded-lg relative overflow-hidden">
+                    <img
+                      src="/ai-assistant-interface.png"
+                      alt="AI Assistant Interface - Code generation and project assistance"
+                      className="object-cover rounded-lg w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Second Image - Voice Chat Builder */}
+            <div className="flex flex-col md:flex-row-reverse gap-8 items-center max-w-5xl mx-auto">
+              <div className="flex-1 text-left space-y-4">
+                <h3 className="text-xl font-bold">Voice Chat Builder</h3>
+                <p className="text-muted-foreground text-sm">Speak naturally to build apps. The voice interface listens to your ideas and transforms them into working code in real-time.</p>
+              </div>
+              <div className="flex-1">
+                <div className="bg-card border border-border rounded-xl p-6">
+                  <div className="aspect-video bg-muted rounded-lg relative overflow-hidden">
+                    <img
+                      src="/voice-chat-builder.png"
+                      alt="Voice Chat Builder Interface - Voice-powered development and natural language coding"
+                      className="object-cover rounded-lg w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="fade-in-up stagger-1 p-8 card-hover bg-card">
+              <div className="space-y-6">
+                <div className="w-16 h-16 bg-muted rounded-2xl flex items-center justify-center">
+                  <Sparkles className="w-8 h-8 text-foreground" />
+                </div>
+                <h3 className="text-2xl font-bold">Voice-Powered Suggestions</h3>
+                <p className="text-muted-foreground leading-relaxed">Translate speech to structured logic, instantly.</p>
+              </div>
+            </Card>
+
+            <Card className="fade-in-up stagger-2 p-8 card-hover bg-card">
+              <div className="space-y-6">
+                <div className="w-16 h-16 bg-muted rounded-2xl flex items-center justify-center">
+                  <Code className="w-8 h-8 text-foreground" />
+                </div>
+                <h3 className="text-2xl font-bold">Conversational Generation</h3>
+                <p className="text-muted-foreground leading-relaxed">From concept to code in a continuous dialogue, with your voice as the IDE.</p>
+              </div>
+            </Card>
+
+            <Card className="fade-in-up stagger-3 p-8 card-hover bg-card">
+              <div className="space-y-6">
+                <div className="w-16 h-16 bg-muted rounded-2xl flex items-center justify-center">
+                  <Shield className="w-8 h-8 text-foreground" />
+                </div>
+                <h3 className="text-2xl font-bold">Intelligent Foundations</h3>
+                <p className="text-muted-foreground leading-relaxed">Build production-grade apps with best practices baked in from the first word.</p>
               </div>
             </Card>
           </div>
