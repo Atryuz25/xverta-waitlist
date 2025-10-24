@@ -151,12 +151,12 @@ export default function HomePage() {
             <span className="typing-cursor"></span>
           </div>
           <h1 className="text-reveal stagger-1 text-4xl md:text-6xl font-bold leading-tight text-balance">
-            Go from <span className="gradient-text">security anxiety</span> to{" "}
-            <span className="text-foreground">automated assurance</span>
+            Turn <span className="gradient-text">voice conversations</span> into{" "}
+            <span className="text-foreground">secure mobile & web apps</span>
           </h1>
           <p className="text-reveal stagger-2 text-xl md:text-2xl text-muted-foreground/90 leading-relaxed text-pretty max-w-4xl mx-auto font-light">
-            Xverta is the <span className="font-semibold text-foreground">AI-powered security co-pilot</span> for scaling teams. We unify scanning, automate fixes with
-            one-click pull requests, and prevent vulnerabilities before they're even written.
+            Xverta transforms <span className="font-semibold text-foreground">real-time voice conversations</span> into fully functional applications with built-in security features. 
+            Speak your app idea, watch it come to life with enterprise-grade protection.
           </p>
           <div className="text-reveal stagger-3 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
@@ -183,8 +183,8 @@ export default function HomePage() {
       <section className="py-20 px-6 bg-gradient-to-b from-background to-muted/20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 slide-in-left">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Powerful Features</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Everything you need to secure your codebase with AI-powered automation</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Voice-to-App Innovation</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Transform conversations into secure, production-ready applications with AI-powered development</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -192,24 +192,24 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <Shield className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">AI-Powered Scanning</h3>
-              <p className="text-muted-foreground text-sm">Advanced machine learning algorithms detect vulnerabilities with unprecedented accuracy.</p>
+              <h3 className="text-xl font-semibold mb-2">Voice-to-Code AI</h3>
+              <p className="text-muted-foreground text-sm">Advanced AI understands natural conversations and generates secure, production-ready code instantly.</p>
             </div>
             
             <div className="scale-in bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <Zap className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">One-Click Fixes</h3>
-              <p className="text-muted-foreground text-sm">Automatically generate and apply security patches with a single click.</p>
+              <h3 className="text-xl font-semibold mb-2">Real-time Development</h3>
+              <p className="text-muted-foreground text-sm">Watch your app come to life as you speak - instant mobile and web application generation.</p>
             </div>
             
             <div className="scale-in bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <Code className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">IDE Integration</h3>
-              <p className="text-muted-foreground text-sm">Real-time security suggestions directly in your development environment.</p>
+              <h3 className="text-xl font-semibold mb-2">Built-in Security</h3>
+              <p className="text-muted-foreground text-sm">Every generated app includes enterprise-grade security features and vulnerability protection by default.</p>
             </div>
           </div>
         </div>
@@ -223,11 +223,11 @@ export default function HomePage() {
               Step 1: Analyze
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">
-              Gain Total <span className="gradient-text">Visibility</span>
+              Speak Your <span className="gradient-text">App Vision</span>
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground/90 text-pretty max-w-4xl mx-auto font-light leading-relaxed">
-              Before you can fix anything, you need a single source of truth. Xverta provides deep, multi-layered scans
-              to give you a complete picture of your risk, from your code to your live applications.
+              Start with a conversation. Describe your app idea, user flows, and features in natural language. 
+              Xverta's AI understands context, requirements, and automatically builds secure applications for any platform.
             </p>
           </div>
 
@@ -246,8 +246,8 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="flex-1 text-left space-y-4 slide-in-right">
-                <h3 className="text-xl font-bold text-foreground">Comprehensive Analysis</h3>
-                <p className="text-muted-foreground/90 text-sm leading-relaxed">Get complete visibility across all your repositories and applications with deep, multi-layered security scanning that identifies vulnerabilities others miss.</p>
+                <h3 className="text-xl font-bold text-foreground">Voice-Driven Development</h3>
+                <p className="text-muted-foreground/90 text-sm leading-relaxed">Describe your app naturally - "I want a social media app with user profiles and secure messaging" - and watch as Xverta generates the complete application architecture.</p>
               </div>
             </div>
           </div>
@@ -258,9 +258,9 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-muted rounded-2xl flex items-center justify-center">
                   <Code className="w-8 h-8 text-foreground" />
                 </div>
-                <h3 className="text-2xl font-bold">Comprehensive Code Analysis</h3>
+                <h3 className="text-2xl font-bold">Natural Language Processing</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Comprehensive code analysis across all repositories
+                  Advanced NLP understands complex app requirements from casual conversation
                 </p>
               </div>
             </Card>
@@ -270,8 +270,8 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-muted rounded-2xl flex items-center justify-center">
                   <Eye className="w-8 h-8 text-foreground" />
                 </div>
-                <h3 className="text-2xl font-bold">Real-time Monitoring</h3>
-                <p className="text-muted-foreground leading-relaxed">Real-time monitoring of deployed applications</p>
+                <h3 className="text-2xl font-bold">Multi-Platform Generation</h3>
+                <p className="text-muted-foreground leading-relaxed">Generate native mobile apps, web applications, and APIs simultaneously</p>
               </div>
             </Card>
 
@@ -280,8 +280,8 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-muted rounded-2xl flex items-center justify-center">
                   <Search className="w-8 h-8 text-foreground" />
                 </div>
-                <h3 className="text-2xl font-bold">Unified Dashboard</h3>
-                <p className="text-muted-foreground leading-relaxed">Unified dashboard with actionable insights</p>
+                <h3 className="text-2xl font-bold">Intelligent Architecture</h3>
+                <p className="text-muted-foreground leading-relaxed">AI-designed system architecture with security and scalability built-in</p>
               </div>
             </Card>
           </div>
@@ -293,20 +293,20 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="scale-in">
-              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">99.9%</div>
-              <div className="text-muted-foreground">Accuracy Rate</div>
-            </div>
-            <div className="scale-in">
-              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">10x</div>
-              <div className="text-muted-foreground">Faster Fixes</div>
-            </div>
-            <div className="scale-in">
-              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">24/7</div>
-              <div className="text-muted-foreground">Monitoring</div>
+              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">5min</div>
+              <div className="text-muted-foreground">Voice to App</div>
             </div>
             <div className="scale-in">
               <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">100+</div>
-              <div className="text-muted-foreground">Security Rules</div>
+              <div className="text-muted-foreground">App Templates</div>
+            </div>
+            <div className="scale-in">
+              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">24/7</div>
+              <div className="text-muted-foreground">AI Development</div>
+            </div>
+            <div className="scale-in">
+              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">99.9%</div>
+              <div className="text-muted-foreground">Security Coverage</div>
             </div>
           </div>
         </div>
@@ -320,11 +320,11 @@ export default function HomePage() {
               Step 2: Remediate
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">
-              Go from Discovery to Deployment <span className="gradient-text">in a Click</span>
+              From Conversation to <span className="gradient-text">Live Application</span>
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground text-pretty max-w-4xl mx-auto font-light leading-relaxed">
-              Finding problems is easy. Fixing them is hard. Xverta closes the loop with intelligent, automated
-              remediation that transforms security from a development blocker into a seamless part of the workflow.
+              Watch your ideas materialize in real-time. As you speak, Xverta generates code, designs UI components, 
+              sets up databases, and deploys secure applications across mobile and web platforms simultaneously.
             </p>
           </div>
 
@@ -332,8 +332,8 @@ export default function HomePage() {
           <div className="fade-in-up mb-16">
             <div className="flex flex-col md:flex-row gap-8 items-center max-w-5xl mx-auto">
               <div className="flex-1 text-left space-y-4">
-                <h3 className="text-xl font-bold">Automated Remediation</h3>
-                <p className="text-muted-foreground text-sm">Transform security findings into fixed code with AI-powered remediation and one-click pull requests.</p>
+                <h3 className="text-xl font-bold">Real-time Code Generation</h3>
+                <p className="text-muted-foreground text-sm">Watch your application build itself as you speak. Complete with UI, backend logic, database schemas, and security layers.</p>
               </div>
               <div className="flex-1">
                 <div className="bg-card border border-border rounded-xl p-6">
@@ -355,8 +355,8 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-muted rounded-2xl flex items-center justify-center">
                   <Sparkles className="w-8 h-8 text-foreground" />
                 </div>
-                <h3 className="text-2xl font-bold">AI-Powered Fixes</h3>
-                <p className="text-muted-foreground leading-relaxed">AI-powered automatic fix generation</p>
+                <h3 className="text-2xl font-bold">Instant App Generation</h3>
+                <p className="text-muted-foreground leading-relaxed">Complete applications generated from voice input with full functionality</p>
               </div>
             </Card>
 
@@ -365,8 +365,8 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-muted rounded-2xl flex items-center justify-center">
                   <ArrowRight className="w-8 h-8 text-foreground" />
                 </div>
-                <h3 className="text-2xl font-bold">One-Click PRs</h3>
-                <p className="text-muted-foreground leading-relaxed">One-click pull request creation</p>
+                <h3 className="text-2xl font-bold">Multi-Platform Deploy</h3>
+                <p className="text-muted-foreground leading-relaxed">Automatic deployment to iOS, Android, and web platforms</p>
               </div>
             </Card>
 
@@ -375,8 +375,8 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-muted rounded-2xl flex items-center justify-center">
                   <CheckCircle className="w-8 h-8 text-foreground" />
                 </div>
-                <h3 className="text-2xl font-bold">Seamless Integration</h3>
-                <p className="text-muted-foreground leading-relaxed">Seamless integration with your workflow</p>
+                <h3 className="text-2xl font-bold">Secure by Design</h3>
+                <p className="text-muted-foreground leading-relaxed">Enterprise security, authentication, and data protection built-in</p>
               </div>
             </Card>
           </div>
@@ -391,11 +391,11 @@ export default function HomePage() {
               Step 3: Prevent
             </div>
             <h2 className="text-5xl md:text-6xl font-bold mb-6 text-balance text-glow">
-              Write Secure Code <span className="text-foreground">from the First Line</span>
+              Enterprise Security <span className="text-foreground">Built Into Every App</span>
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground text-pretty max-w-4xl mx-auto font-light leading-relaxed">
-              The most effective way to fix a vulnerability is to never write it in the first place. Xverta's proactive
-              code generation engine is designed to be your team's security partner during the creation process.
+              Every application generated by Xverta includes enterprise-grade security from day one. Authentication, encryption, 
+              secure APIs, and vulnerability protection are automatically integrated into your voice-generated applications.
             </p>
           </div>
 

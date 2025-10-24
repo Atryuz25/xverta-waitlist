@@ -40,7 +40,7 @@ export default function SignupPage() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/waitlist", {
+      const response = await fetch("/api/waitlist", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -85,7 +85,7 @@ export default function SignupPage() {
           </Link>
           <h1 className="text-3xl font-bold">Join the Private Beta</h1>
           <p className="text-muted-foreground mt-2">
-            Get early access to the future of application security
+            Get early access to voice-powered app development with built-in security
           </p>
         </div>
 
@@ -152,7 +152,7 @@ export default function SignupPage() {
 
           <div className="mt-6 text-center">
             <p className="text-sm text-muted-foreground">
-              By joining, you agree to receive updates about Xverta.
+              By joining, you agree to receive updates about Xverta's voice-to-app platform.
             </p>
           </div>
         </Card>
